@@ -1,5 +1,5 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>30</y><w>280</w><h>260</h></coordinates><panel_attributes>/AbstractClass/
-Shippart
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>380</y><w>280</w><h>260</h></coordinates><panel_attributes>/AbstractClass/
+ShipPart
 -
 #name:String
 #maxHp:int
@@ -9,24 +9,24 @@ Shippart
 +takeDamage(int damage)
 +isDestroyed():boolean
 +getHealthRatio():double
-+getCurrentHp():int
++getCurrentHp():String
 +getName():String
 +getMaxHp():int
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>260</y><w>110</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>360</y><w>260</w><h>130</h></coordinates><panel_attributes>Engine extends ShipPart
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>550</y><w>120</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;230</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>780</y><w>260</w><h>130</h></coordinates><panel_attributes>Engine extends ShipPart
 -
 - maxThrust: double
 - warpCapability: int
 -
 + getThrustFactor(): double
 + getCurrentMaxSpeed(baseSpeed: double): double
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>200</y><w>240</w><h>110</h></coordinates><panel_attributes>Hull extends ShipPart
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>740</y><w>240</w><h>110</h></coordinates><panel_attributes>Hull extends ShipPart
 -
 - armor: int
 -
 + absorbDamage(int damage): int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>160</y><w>210</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>0</y><w>220</w><h>170</h></coordinates><panel_attributes>WeaponSystem extends ShipPart
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>640</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>550</y><w>220</w><h>140</h></coordinates><panel_attributes>WeaponSystem extends ShipPart
 -
 - baseDamage: int
 - cooldown: double
@@ -35,7 +35,7 @@ Shippart
 + getCurrentDamage(): int
 + canFire(): boolean
 + fire(): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>70</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;30;180;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>430</y><w>270</w><h>230</h></coordinates><panel_attributes>Ship
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>440</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>0</y><w>270</w><h>230</h></coordinates><panel_attributes>Ship
 -
 - name: String
 - baseSpeed: double
@@ -45,4 +45,4 @@ Shippart
 + takeHit(partName: String, damage: int): void
 + getCurrentSpeed(): double
 + getParts(): List&lt;ShipPart&gt;
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>280</y><w>40</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>20;150;10;10</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>220</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>
