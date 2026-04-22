@@ -1,7 +1,33 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>100</x><y>90</y><w>160</w><h>100</h></coordinates><panel_attributes>Starship
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>60</y><w>280</w><h>260</h></coordinates><panel_attributes>/AbstractClass/
+Shipparts
 -
--hullIntegrity:double 
--shieldIntegrity:double
+#name:String
+#maxHp:int
+#currentHp:int
+-
++ShipPart(String name, int maxHp)
++takeDamage(int damage)
++isDestroyed:boolean
++getPercentHealth:double
++getCurrentHp:int
++getName:String
++getMaxHp:int
 
 
-</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>310</y><w>130</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>390</y><w>260</w><h>130</h></coordinates><panel_attributes>Engine extends ShipPart
+-
+-maxSpeed:double
+-warpCapability:int
+-speed:double
+--
++setSpeed(double:impulsLevel):double
++fullStop:double
+-moveTo(double Speed):double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>630</y><w>190</w><h>110</h></coordinates><panel_attributes>Hull
+-
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>310</y><w>300</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;320;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>480</y><w>220</w><h>170</h></coordinates><panel_attributes>WeaponSystems extends ShipPart
+-
+-damageOutput:int
+-</panel_attributes><additional_attributes></additional_attributes></element></diagram>
