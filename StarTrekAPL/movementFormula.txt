@@ -1,0 +1,17 @@
+F=force in Newton
+m=mass
+a=acceleration
+
+
+F=m*a
+a=F/m
+v=geschwindigkeit
+
+a = v/t
+
+
+75000 km/s = Voller impulse
+
+#Fortbewegungssystem überdenken
+
+

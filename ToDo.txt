@@ -1,2 +1,0 @@
-1. add weight to shippart (Ship needs value of total weight)
-2. formula for Speed in Space with thrust and weight 

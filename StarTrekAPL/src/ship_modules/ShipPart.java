@@ -1,10 +1,16 @@
 package ship_modules;
 
+
 abstract class ShipPart {
 
   protected String name;
   protected int maxHp;
   protected int currentHp;
+  
+  //weight is meassured in tonnes
+  //e.g. USS Enterprise = 4 500 000 t 
+  protected double weight;
+  
 
 
 
