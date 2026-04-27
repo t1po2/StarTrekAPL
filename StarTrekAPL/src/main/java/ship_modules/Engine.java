@@ -1,15 +1,16 @@
 package ship_modules;
 
+import ship_modules.coreShip.ShipPart;
+
 public class Engine extends ShipPart {
 
    // max Thrust is meassured in km/s
    private final double maxThrust; // Enginepower ?
    // private int warpCapability; //unnecessary --> for later Updates ;)
-
    private double currentThrust;
 
    //
-   public Engine(String engineModel, int maxHpEngine, double maxThrust) {
+   public Engine(String engineModel, double maxHpEngine, double maxSpEngine, double maxThrust) {
       super(engineModel, maxHpEngine);
       this.maxThrust = maxThrust;
       this.weight = 321000; // per Engine

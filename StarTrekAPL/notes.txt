@@ -1,6 +1,5 @@
 Since you are dealing with physics (seen in your .txt file), you can calculate the damage based on kinetic energy:
 
-
 E= 1/2*m*v^2
 
 E=takeDamge
@@ -10,6 +9,8 @@ If a torpedo with mass m hits at velocity v, the takeDamage amount could be scal
 Does your current ShipPart class already have a health variable, or do we need to add one?
 
 
+
+------------------------------------------------------------------------------
 
 How to handle "Location" damage
 If you want certain sides (Front, Back, Left, Right) to be hit specifically:
@@ -21,3 +22,6 @@ Define Locations: * "Front" -> WeaponSystem
 "Rear" -> Engine
 
 The Logic: When the ship is hit from the front, you call shipParts.get("Front").takeDamage(20);.
+
+---------------------------------------------------------------------------------------------------
+
