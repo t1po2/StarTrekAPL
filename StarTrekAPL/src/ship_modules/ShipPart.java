@@ -55,7 +55,4 @@ abstract class ShipPart {
   public int getMaxHp(){
     return this.maxHp;
   }
-
-
-
 }
