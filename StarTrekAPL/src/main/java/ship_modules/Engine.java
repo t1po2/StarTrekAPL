@@ -10,7 +10,7 @@ public class Engine extends ShipPart {
    private double currentThrust;
 
    //
-   public Engine(String engineModel, double maxHpEngine, double maxSpEngine, double maxThrust) {
+   public Engine(String engineModel, double maxHpEngine, double maxThrust) {
       super(engineModel, maxHpEngine);
       this.maxThrust = maxThrust;
       this.weight = 321000; // per Engine

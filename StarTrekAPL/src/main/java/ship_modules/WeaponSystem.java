@@ -18,6 +18,8 @@ public class WeaponSystem extends ShipPart {
     // im not sure if this will even work
   }
 
+
+  //tf i jsut coded BS 100
   public double overloadPhasers(boolean overload) {
     if (overload == true) {
       this.currentHullIntegrity = currentHullIntegrity * 0.95;
