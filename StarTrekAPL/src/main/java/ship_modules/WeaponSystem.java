@@ -4,12 +4,10 @@ import ship_modules.coreShip.ShipPart;
 
 public class WeaponSystem extends ShipPart {
 
-  private final String phaserPos;
   private double damagePotential = 100;
 
-  public WeaponSystem(String weaponModel, double maxHpWeapon, String pos) {
+  public WeaponSystem(String weaponModel, double maxHpWeapon) {
     super(weaponModel, maxHpWeapon);
-    this.phaserPos = pos;
     this.weight = 76000;
   }
 

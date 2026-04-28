@@ -24,7 +24,7 @@ public abstract class ShipPart {
 
 
   //trakeDamge DamageEngigne should be an Interface later Implement it
-  public void takeDamage(int damage){
+  public void takeDamage(double damage){
 
     this.currentHullIntegrity = this.currentHullIntegrity - damage;  
     if (this.currentHullIntegrity < 0 )
