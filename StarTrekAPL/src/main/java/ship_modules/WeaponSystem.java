@@ -8,7 +8,7 @@ public class WeaponSystem extends ShipPart {
 
   public WeaponSystem(String weaponModel, double maxHpWeapon) {
     super(weaponModel, maxHpWeapon);
-    this.weight = 76000;
+    this.weight = 10000;
   }
 
   public double damageVaue() {

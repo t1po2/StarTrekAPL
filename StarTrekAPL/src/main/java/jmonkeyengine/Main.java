@@ -14,7 +14,7 @@ public class Main extends SimpleApplication {
         Main app = new Main();
  
         AppSettings settings = new AppSettings(true);
-        settings.setTitle("My Awesome Game");
+        settings.setTitle("Epic Space Battle ");
         app.setSettings(settings);
  
         app.start();
@@ -23,15 +23,15 @@ public class Main extends SimpleApplication {
  
     @Override
     public void simpleInitApp() {
- 
-        Box b = new Box(1, 1, 1);
-        Geometry geom = new Geometry("Box", b);
- 
-        Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
-        mat.setColor("Color", ColorRGBA.Blue);
-        geom.setMaterial(mat);
- 
-        rootNode.attachChild(geom);
+
+        viewPort.setBackgroundColor(ColorRGBA.Black);
+        setDisplayFps(true);
+        setDisplayStatView(false);
+
+        
+
+
+
  
     }
  

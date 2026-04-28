@@ -5,15 +5,20 @@ import ship_modules.coreShip.ShipPart;
 public class Engine extends ShipPart {
 
    // max Thrust is meassured in km/s
-   private final double maxThrust; // Enginepower ?
+   private final double maxThrust=2500000; // Enginepower ?
    // private int warpCapability; //unnecessary --> for later Updates ;)
-   private double currentThrust;
+   private double currentThrust=0;
+
+
+   // Thrust = F 
+   // Acceleration = a = F/m
+   // m = mass   
+
 
    //
-   public Engine(String engineModel, double maxHpEngine, double maxThrust) {
+   public Engine(String engineModel, double maxHpEngine) {
       super(engineModel, maxHpEngine);
-      this.maxThrust = maxThrust;
-      this.weight = 321000; // per Engine
+      this.weight = 40000; // per Engine
    }
 
    
@@ -64,4 +69,5 @@ public class Engine extends ShipPart {
          System.out.println("Set Speed to " + this.currentThrust);
       }
    }
+
 }

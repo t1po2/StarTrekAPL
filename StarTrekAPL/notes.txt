@@ -25,3 +25,47 @@ The Logic: When the ship is hit from the front, you call shipParts.get("Front").
 
 ---------------------------------------------------------------------------------------------------
 
+GameWOrld Size ?
+
+(x,y,z)
+(300k,300k,300k)
+
+
+mass of a ship  : 100.000f
+maxThrust       : 2,500,000f 
+lienarDrag      : 0.99f anti Infinite go forward
+angularDrag     : 0.99f anti infinite spinning
+
+5. 
+Final Scale CheckAt $1,500 Units/s
+It takes 100 seconds to reach your world boundary.
+If you want the world to feel "Bigger," lower the maxImpulse speed.
+If you want the ship to feel "Heavier," lower the maxThrust.
+
+
+
+
+
+
+1. Understand JMovementEngine Basics
+Review Documentation: Start by reviewing the JMovementEngine documentation to understand its core concepts, such as how movements are defined, updated, and applied to game objects.
+Identify Key Components: Identify the key components of the JMovementEngine, such as movement handlers, update loops, and collision detection systems.
+2. Define Ship Movement Requirements
+Determine Movement Types: Decide on the types of movements your ship will have, such as forward, backward, strafing, rotation, and possibly more complex movements like rolling or pitching.
+Consider Speed and Acceleration: Define how speed and acceleration will work for your ship. This includes maximum speeds, acceleration rates, and possibly deceleration rates.
+Plan for Boundary Conditions: Think about how the ship will behave at the edges of the game world or other boundaries, such as wrapping around, bouncing off, or being constrained within certain areas.
+3. Implement Basic Movement
+Create a Ship Object: In your game, create a ship object that will utilize the JMovementEngine for its movement. Ensure this object has properties for position, velocity, and possibly acceleration.
+Apply Movement Logic: Using the JMovementEngine, apply the basic movement logic to your ship object. This involves creating movement handlers for each type of movement you've defined (e.g., moving forward, turning).
+Test Basic Movement: Before adding complexity, test the basic movement to ensure it works as expected. This includes moving in different directions and possibly rotating.
+4. Enhance Movement with Advanced Features
+Add Acceleration and Deceleration: Implement acceleration and deceleration to make the ship's movement more realistic. This could involve gradually increasing or decreasing the ship's speed over time.
+Implement Rotation and Orientation: If not already included, add the ability for the ship to rotate and change its orientation. This might involve using trigonometry to update the ship's direction based on its rotation.
+Consider Advanced Movements: Depending on your game, you might want to add more complex movements like strafing, rolling, or pitching. Each of these will require additional logic and possibly adjustments to how the ship's position and orientation are updated.
+5. Integrate Collision Detection
+Use JMovementEngine Collision Tools: If the JMovementEngine provides built-in collision detection tools, use them to detect when the ship collides with other objects in the game world.
+Implement Collision Responses: Decide how the ship should behave when it collides with something. This could range from simply stopping, bouncing off, to more complex behaviors like taking damage.
+6. Polish and Refine
+Test Extensively: Test the ship's movement under all scenarios, including edge cases like high speeds, sharp turns, and collisions at different angles.
+Adjust for Feel and Realism: Based on feedback and your own testing, adjust the movement parameters (like acceleration, deceleration, rotation speeds) to make the ship's movement feel right for your game.
+Optimize Performance: Ensure that the movement logic does not overly tax the game's performance. This might involve optimizing collision detection, reducing unnecessary calculations, or using more efficient algorithms.

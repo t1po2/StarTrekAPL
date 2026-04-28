@@ -7,6 +7,7 @@ public class ShipBody extends ShipPart{
 
     public ShipBody(String shipBodyName, double maxHpBody){
         super(shipBodyName,maxHpBody);
+        this.weight=50000;
     }
 
 }

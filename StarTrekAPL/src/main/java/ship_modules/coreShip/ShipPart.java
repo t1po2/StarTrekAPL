@@ -7,9 +7,11 @@ public abstract class ShipPart {
   protected final double maxHullIntegrity;
   protected double currentHullIntegrity;
 
+
   
   //weight is meassured in tonnes
   //e.g. USS Enterprise = 4 500 000 t 
+  //downscale to it at best mass of 100 000
   protected double weight;
   
 
@@ -58,4 +60,9 @@ public abstract class ShipPart {
   public double getmaxHullIntegrity(){
     return this.maxHullIntegrity;
   }
+  
+  public double getWeight(){
+    return this.weight;
+  }
+
 }
